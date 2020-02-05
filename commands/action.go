@@ -500,7 +500,7 @@ func augmentAction(cmd *cobra.Command, args []string, action *whisk.Action, upda
 		}
 	}
 
-	// Augment the action's annotations with the --web related annotations
+	// Augment the action's annotations with the --web related annotations....
 	if augmentedAction, err = augmentWebArg(cmd, args, action, augmentedAction, existingAction); err != nil {
 		return nil, err
 	}
